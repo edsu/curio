@@ -1,0 +1,9 @@
+language: python
+
+python:
+  - "3.4"
+
+script: 
+  - pip install -r requirements.txt
+  - python setup.py test
+

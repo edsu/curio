@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
-from openpyxl import load_workbook
+import curio
+import pytest
 
-workbook = load_workbook(filename="test-data/conrad.xlsx")
-worksheet = workbook[workbook.sheetnames[0]]
-
-for row in worksheet.rows:
-    print(row[1].value)
+def test_curio():
+    c = curio.Cabinet("test-data")
+    assert len(c.items) == 1821
