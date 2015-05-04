@@ -1,0 +1,4 @@
+pillow
+openpyxl
+pytesseract
+git+https://github.com/edsu/deepzoom.py.git@4b61b3af228f1652eb1bc6c526e0e54e972cfe07#egg=deepzoom
